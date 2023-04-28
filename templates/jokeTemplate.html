@@ -1,6 +1,18 @@
+<!--
 <hr>
 <h2>{{joke["Title"]}}</h2>
 <h5><span class="glyphicon glyphicon-user"></span> {{joke["Author"]}} </h5>
 <h5><span class="label label-success">{{joke["Subreddit"]}}</span> <span class=""><a href={{joke["Link"]}} class="label label-primary">Link</a></span></h5><br>
-<p>{{joke["Body"]}}</p>
+<h3>{{joke["Body"]}}</h3>
+<br><br>
+-->
+<div class="card mb-3">
+    <div class="card-body text-white bg-info" style="padding:1em; border:5px solid">
+      <h2 class="card-title">{{joke["Title"]}}</h2>
+      <p class="card-text">{{joke["Body"]}}</p>
+      <p class="card-text"><small class="text-muted"><span class="glyphicon glyphicon-user"></span> {{joke["Author"]}}</small></p>
+      <h5><span class="label label-success">{{joke["Subreddit"]}}</span> <span class=""><a href={{joke["Link"]}} class="label label-primary">Link</a></span></h5><br>
+      <p><span class="badge">2</span>Amount of upvotes</p><br>
+    </div>
+</div>
 <br><br>
